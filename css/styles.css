@@ -33,6 +33,8 @@ img {
   display: block;
 }
 .list {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 .link {
@@ -122,8 +124,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-
-  margin-right: 50px;
 }
 .contact-phone-number {
   font-weight: 500;
@@ -135,6 +135,9 @@ body {
 .contact-list {
   display: flex;
   margin-left: auto;
+}
+.contact-item {
+  margin-right: 50px;
 }
 .contact-mail:hover,
 .contact-mail:focus {
@@ -210,7 +213,7 @@ body {
 }
 .about {
   padding-top: 94px;
-  padding-bottom: 108px;
+  padding-bottom: 94px;
 }
 .about-list {
   display: flex;
@@ -243,11 +246,12 @@ body {
 .work .pictures + .pictures {
   margin-left: 30px;
 }
+
 .work {
   display: flex;
-  /* justify-content: ; */
+  justify-content: space-between;
   /* flex-wrap: wrap; */
-  /* gap: 30px; */
+  gap: 30px;
 }
 /*====================/ GALLERY===================== */
 /* =====================TEAM======================== */
@@ -317,8 +321,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address-item {
-  margin-top: 20px;
+.address-item.menu-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .address:hover,
@@ -335,11 +338,12 @@ body {
 }
 .logo-footer {
   color: var(--fon-color);
-  padding-left: 30xp;
+  margin-bottom: 20px;
 }
 /* ========================PORTFOLIO========================= */
 .btn-portfolio {
   font-family: 'Roboto', sans-serif;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -369,6 +373,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 }
 .price {
@@ -378,8 +383,6 @@ body {
   color: var(--secondary-text-color);
 }
 .portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .cards {
   display: flex;
@@ -393,5 +396,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
+  border-top: none;
   border: 1px solid #eeeeee;
 }
